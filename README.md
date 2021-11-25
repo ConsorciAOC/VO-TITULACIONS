@@ -5,18 +5,18 @@
 1. [Introducció](#1)
 2. [Transmissions de dades disponibles](#2)
 3. [Missatgeria dels serveis](#3)
-  1. [Verificació de titulacions universitàries (TITOLS_UNIVERSITARIS)](#3.1)
-    1. [3.1.1 Petició](#3.1.1)
-    2. [3.1.2 Resposta – dades específiques](#3.1.2)
-  2. [Verificació de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS)](#3.2)
-    1. [3.2.1 Petició](#3.2.1)
-    2. [3.2.2 Resposta – dades específiques](#3.2.1)
-  3. [Llistat de titulacions universitàries (TITOLS_UNIVERSITARIS_LLISTAT)](#3.3)
-    1. [3.3.1 Petició](#3.3.1)
-    2. [3.3.2 Resposta – dades específiques](#3.3.2)
-  4. [Llistat de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS_LLISTAT)](#3.4)
-    1. [3.4.1 Petició](#3.4.1)
-    2. [3.4.2 Resposta – dades específiques](#3.4.2)
+   1. [3.1 Verificació de titulacions universitàries (TITOLS_UNIVERSITARIS)](#3.1)
+      1. [3.1.1 Petició](#3.1.1)
+      2. [3.1.2 Resposta – dades específiques](#3.1.2)
+   2. [3.2 Verificació de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS)](#3.2)
+      1. [3.2.1 Petició – dades específiques](#3.2.1)
+      2. [3.2.2 Resposta – dades específiques](#3.2.2)
+   3. [3.3 Llistat de titulacions universitàries (TITOLS_UNIVERSITARIS_LLISTAT)](#3.3)
+      1. [3.3.1 Petició](#3.3.1)
+      2. [3.3.2 Resposta – dades específiques](#3.3.2)
+   4. [3.4 Llistat de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS_LLISTAT)](#3.1)
+      1. [3.4.1 Petició](#3.4.1)
+      2. [3.4.2 Resposta – dades específiques](#3.4.2)
 
 
 # 1 Introducció <a name="1"></a>
@@ -37,11 +37,13 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | **EMISSOR** |
 | --- |
 | MEPSYD(MinisteriodeEducación) |
+
 | **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** |
-| **MEPSYD** | TITOLS\_UNIVERSITARIS | Verificaciódetítolsuniversitarisoficialsdeltitular. |
-| TITOLS\_NO\_UNIVERSITARIS | Verificaciódetítolsnouniversitarisoficialsdeltitular. |
-| TITOLS\_UNIVERSITARIS\_LLISTAT | Llistatdetítolsuniversitarisoficialsdeltitular. |
-| TITOLS\_NO\_UNIVERSITARIS\_LLISTAT | Llistat de títols no universitaris oficials deltitular. |
+| --- | --- | --- |
+| **MEPSYD** | TITOLS\_UNIVERSITARIS | Verificació de títols universitaris oficials del titular. |
+| **MEPSYD** | TITOLS\_NO\_UNIVERSITARIS | Verificació de títols no universitaris oficials del titular. |
+| **MEPSYD** | TITOLS\_UNIVERSITARIS\_LLISTAT | Llistat de títols universitaris oficials del titular. |
+| **MEPSYD** | TITOLS\_NO\_UNIVERSITARIS\_LLISTAT | Llistat de títols no universitaris oficials del titular. |
 
 Totes les consultes del producte tenen disponible la versió imprimible del resultat de la consulta en format PDF. Per més detalls adreceu-vos a l’apartat Extensions de missatgeria del document de missatgeria genèrica.
 
