@@ -54,7 +54,9 @@ Totes les consultes del producte tenen disponible la versió imprimible del resu
 
 A continuació es detalla la missatgeria corresponent al bloc de dades específiques de les modalitats de consum del producte.
 
-![image](https://user-images.githubusercontent.com/32306731/143427516-4f4960d3-6684-4d46-bca0-36d3d04008a6.png) L’emissor de les dades requereix que s’informin les dades del funcionari que realitza la consulta. Així, cal informar els següents camps de l’element Funcionario del bloc de dades genèriques: /Peticion/Funcionario/NombreCompletoFuncionario, 
+![image](https://user-images.githubusercontent.com/32306731/143427516-4f4960d3-6684-4d46-bca0-36d3d04008a6.png) L’emissor de les dades requereix que s’informin les dades del funcionari que realitza la consulta. Així, cal informar els següents camps de l’element Funcionario del bloc de dades genèriques:
+
+/Peticion/Funcionario/NombreCompletoFuncionario, 
 /Peticion/Funcionario/NifFuncionario, 
 //SolicitudTransmision/DatosGenericos/Solicitante/Funcionario/NombreCompletoFuncionario, 
 //SolicitudTransmision/DatosGenericos/Solicitante/Funcionario/NifFuncionario
@@ -77,105 +79,56 @@ Aquesta modalitat permet obtenir els títols universitaris del ciutadà sobre el
 
 Aquesta modalitat no requereix informar dades específiques.
 
-    1.
-### Resposta –dadesespecífiques
+### 3.1.2 Resposta – dades específiques <a name="3.1.2"></a>
 
-Del&#39;_schema_associatalarespostaespecifica,elserveiinformalesdadesqueesdetallenacontinuació.
-
-| _Element_ | _Descripció_ |
-| --- | --- |
-| /respostaVerificacioTitolsUniversitaris/titolsUniversitaris | Blocdedades.Contélainformaciódelstítolsdeltitularsobreelque es realitzala consulta. |
-| //titolsUniversitaris/DatosTitular/FechaNacimiento | Datadenaixementdeltitularsobreelquees realitzala consulta. El format s&#39;ajustarà a DD/MM/AAAA,MM/AAAAoAAAA. |
-| //titolsUniversitaris/ListaTitulos/DatosTitulacion | Blocdedades.Contélainformaciód&#39;untítoldeltitularsobreel quees realitzalaconsulta. |
-| //DatosTitulacion/DatosCentro/Universidad | Universitatquevaatorgareltítoluniversitari. |
-| //DatosTitulacion/DatosCentro/Centro | Centrequevaatorgareltítoluniversitari. |
-| //DatosTitulacion/DatosTitulo/CodTitulacion | Codidetitulació.
-
-- PertítolsPreBoloniavegeul&#39;Excel
-_Estudios\_universitarios\_pre\_Bolonia.xlsx_
-
-- PertítolsBolonia vegeu[https://www.educacion.gob.es/ruct/consultaestud](https://www.educacion.gob.es/ruct/consultaestudios?actual=estudios)[ios?actual=estudios](https://www.educacion.gob.es/ruct/consultaestudios?actual=estudios)
- |
+De l’schema associat a la resposta especifica, el servei informa les dades que es detallen a continuació.
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-|
- |
-- Perhomologacionsvegeul&#39;Excel
-_Titulaciones\_homologaciones.xlsx_
+| /respostaVerificacioTitolsUniversitaris/titolsUniversitaris | Bloc de dades. Conté la informació dels títols del titular sobre el que es realitza la consulta. |
+| //titolsUniversitaris/DatosTitular/FechaNacimiento | Data de naixement del titular sobre el que es realitza la consulta. El format s’ajustarà a DD/MM/AAAA, MM/AAAA o AAAA.. |
+| //titolsUniversitaris/ListaTitulos/DatosTitulacion | Bloc de dades. Conté la informació d’un títol del titular sobre el que es realitza la consulta. |
+| //DatosTitulacion/DatosCentro/Universidad | Universitat que va atorgar el títol universitari. |
+| //DatosTitulacion/DatosCentro/Centro | Centre que va atorgar el títol universitari. |
+| //DatosTitulacion/DatosTitulo/CodTitulacion | Codi de titulació. <ul><li>Per títols Pre Bolonia vegeu l'Excel Estudios_universitarios_pre_Bolonia.xlsx</li><li>Per títols Bolonia vegeu https://www.educacion.gob.es/ruct/consultaestudios?actual=estudios</li><li>Per homologacions vegeu l'Excel Titulaciones_homologaciones.xlsx</li><li>Per títols de llibres manuscrits vegeu Titulaciones_libros.xlsx</li></ul> |
+| //DatosTitulacion/DatosTitulo/NombreCarrera | Nom de la carrera de la que el titular poseeix el títol. |
+| //DatosTitulacion/DatosTitulo/CodTipoTitulo | Codi de tipus de títol: <lu><li>0A - Especialista</li><li>0B - Diploma Post-grado</li><li>0C - Título Superior Extranjero (Acceso Doctorado)</li><li>0D - Título Profesional Superior Estatal(Acceso Doctor)</li><li>0E - Tit. o Estudio Equivalente a Título Universitario</li><li>0F - Título Profesional</li><li>0G - Máster</li><li>0H - Grado</li><li>0J - Equivalente a Tit. Ldo. (Títulos Eclesiásticos)</li><li>0K - Tít. o Est. equiv. Ldo.(Ens. Artíst.) Acce.Doctor</li><li>01 - Diplomado/Maestro</li><li>02 - Arquitecto Técnico</li><li>03 - Ingeniero Técnico</li><li>04 - Licenciado</li><li>05 - Arquitecto</li><li>06 - Ingeniero</li><li>07 - Doctor</li><li>08 - Estudios Extranjeros Homologados (Acceso Doctor)</li></lu> |
+| //DatosTitulacion/DatosTitulo/TipoTitulo | Tipus de títol del titular. |
+| //DatosTitulacion/DatosTitulo/FechaFinalizacion | Data de finalització dels estudis del títol associat. El format s’ajustarà a DD/MM/AAAA, MM/AAAA o AAAA. |
+| //DatosTitulacion/DatosTitulo/FechaExpedicion | Data pagament de tases per expedició (DD/MM/AAAA). |
+| //DatosTitulacion/DatosTitulo/CodPaisExpedicion | Codi del país d’expedició del títol (codificació ISO 3166-1, numèric). |
+| //DatosTitulacion/DatosTitulo/PaisExpedicion | País d’expedició del títol. |
+| //DatosTitulacion/DatosTitulo/NumTitulo | Número del títol. |
+| //DatosTitulacion/DatosTitulo/RegistroUniv | Registre universitari (codi de registre). |
+| //resultat/codiResultat | Codi de resultat de l’operació de consulta: <lu><li>0003: Tramitada. Titular localitzat.</li><li>0232: Error reportat per l’emissor. Existeix més d’un registre per les dades proporcionades en la consulta.</li><li>0233: Titular no identificat.</li><li>0238: No hi ha dades del titular consultat.</li><li>0502: Error en la comunicació amb l’emissor.</li></lu> |
+| //resultat/descripcio | Descripció del resultat. |
 
-- Pertítolsdellibresmanuscritsvegeu
-_Titulaciones\_libros.xlsx_ |
-| //DatosTitulacion/DatosTitulo/NombreCarrera | Nom delacarreradelaqueeltitular poseeixel títol. |
-| //DatosTitulacion/DatosTitulo/CodTipoTitulo | Codidetipusde títol:
+![image](https://user-images.githubusercontent.com/32306731/143479045-465782a2-6a47-4bbc-b41c-f8dc6c4f4ec9.png)
 
-- 0A-Especialista
-- 0B-DiplomaPost-grado
-- 0C - Título Superior Extranjero (AccesoDoctorado)
-- 0D - Título Profesional Superior Estatal(AccesoDoctor)
-- 0E - Tit. o Estudio Equivalente a TítuloUniversitario
-- 0F-TítuloProfesional
-- 0G-Máster
-- 0H- Grado
-- 0J-EquivalenteaTit.Ldo.(TítulosEclesiásticos)
-- 0K - Tít. o Est. equiv. Ldo.(Ens. Artíst.)Acce.Doctor
-- 01-Diplomado/Maestro
-- 02-ArquitectoTécnico
-- 03-IngenieroTécnico
-- 04-Licenciado
-- 05 -Arquitecto
-- 06-Ingeniero
-- 07 - Doctor
-- 08-EstudiosExtranjerosHomologados(AccesoDoctor)
- |
-| //DatosTitulacion/DatosTitulo/TipoTitulo | Tipusdetítoldeltitular. |
-| //DatosTitulacion/DatosTitulo/FechaFinalizacion | Data de finalització dels estudis del títol associat. Elformat s&#39;ajustarà a DD/MM/AAAA, MM/AAAA oAAAA. |
-| //DatosTitulacion/DatosTitulo/FechaExpedicion | Datapagamentdetasesperexpedició(DD/MM/AAAA). |
-| //DatosTitulacion/DatosTitulo/CodPaisExpedicion | Codi del país d&#39;expedició del títol (codificació ISO3166-1,numèric). |
-| //DatosTitulacion/DatosTitulo/PaisExpedicion | Paísd&#39;expediciódeltítol. |
-| //DatosTitulacion/DatosTitulo/NumTitulo | Númerodeltítol. |
-| //DatosTitulacion/DatosTitulo/RegistroUniv | Registreuniversitari(codideregistre). |
-| //resultat/codiResultat | Codideresultatdel&#39;operaciódeconsulta:
-- 0003:Tramitada.Titularlocalitzat.
- |
+## 3.2 Verificació de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS) <a name="3.2"></a>
+
+Aquesta modalitat permet obtenir els títols no universitaris del ciutadà sobre el que es realitza la consulta.
+
+### 3.2.1 Petició
+
+#### 3.2.1.1 Dades genèriques
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-|
- |
-- 0232: Error reportat per l&#39;emissor. Existeixmésd&#39;unregistreperlesdadesproporcionadesenla consulta.
-- 0233:Titularnoidentificat.
-- 0238:Nohihadades deltitularconsultat.
-- 0502: Error en la comunicació ambl&#39;emissor.
- |
-| //resultat/descripcio | Descripciódelresultat. |
-
-![](RackMultipart20211123-4-1fg42x4_html_b10ef2e538f0ec8e.png)
-
-  1. **Verificació de titulacions no universitàries**
-
-### (TITOLS\_NO\_UNIVERSITARIS)
-
-Aquestamodalitatpermetobtenirelstítolsnouniversitarisdelciutadàsobreelqueesrealitzalaconsulta.
-
-    1.
-### Petició
-
-      1. **Dades**** genèriques**
-
-| _Element_ | _Descripció_ |
-| --- | --- |
-| //DatosGenericos/Titular/TipoDocumentacion | Tipus de documentació (DNI / NIF o NIE). Encas d&#39;informar un NIE, el servei únicamentrespona titulacionsobtingudesalpaís. |
+| //DatosGenericos/Titular/TipoDocumentacion | Tipus de documentació (DNI / NIF o NIE). En cas d'informar un NIE, el servei únicament respon a titulacions obtingudes al país. |
 | //DatosGenericos/Titular/Documentacion | Documentació. |
 
-      1. **Dades**** específiques**
+#### 3.2.1.2 Dades específiques
 
-Aquestamodalitatnorequereixinformardadesespecífiques.
+Aquesta modalitat no requereix informar dades específiques.
 
-    1.
-### Resposta –dadesespecífiques
+### 3.2.2 Resposta – dades específiques
 
-![](RackMultipart20211123-4-1fg42x4_html_c7aa7f3ba409a0e0.png)
+![image](https://user-images.githubusercontent.com/32306731/143479316-6b89f029-c672-4004-a177-67c404ea2d73.png)
+
+
+-------------------------- SEGUIR A PARTIR D'AQUI
+
 
 | _Element_ | _Descripció_ |
 | --- | --- |
