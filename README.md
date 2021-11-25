@@ -2,24 +2,24 @@
 
 # Índex
 
-1. [Introducció 1](#_bookmark0)
-2. [Transmissionsdedades disponibles 1](#_bookmark1)
-3. [Missatgeria dels serveis 1](#_bookmark2)
-  1. [Verificació de titulacionsuniversitàries(TITOLS\_UNIVERSITARIS) 2](#_bookmark3)
-    1. [Petició 2](#_bookmark4)
-    2. [Resposta–dades específiques 2](#_bookmark5)
-  2. [Verificació de titulacionsnouniversitàries(TITOLS\_NO\_UNIVERSITARIS) 4](#_bookmark6)
-    1. [Petició 4](#_bookmark7)
-    2. [Resposta–dades específiques 5](#_bookmark8)
-  3. [Llistatdetitulacionsuniversitàries (TITOLS\_UNIVERSITARIS\_LLISTAT) 7](#_bookmark9)
-    1. [Petició 7](#_bookmark10)
-    2. [Resposta–dades específiques 8](#_bookmark11)
-  4. [Llistatdetitulacionsno universitàries(TITOLS\_NO\_UNIVERSITARIS\_LLISTAT) 11](#_bookmark12)
-    1. [Petició 11](#_bookmark13)
-    2. [Resposta–dades específiques 12](#_bookmark14)
+1. [Introducció](#1)
+2. [Transmissions de dades disponibles](#2)
+3. [Missatgeria dels serveis](#3)
+  1. [Verificació de titulacions universitàries (TITOLS_UNIVERSITARIS)](#3.1)
+    1. [3.1.1 Petició](#3.1.1)
+    2. [3.1.2 Resposta – dades específiques](#3.1.2)
+  2. [Verificació de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS)](#3.2)
+    1. [3.2.1 Petició](#3.2.1)
+    2. [3.2.2 Resposta – dades específiques](#3.2.1)
+  3. [Llistat de titulacions universitàries (TITOLS_UNIVERSITARIS_LLISTAT)](#3.3)
+    1. [3.3.1 Petició](#3.3.1)
+    2. [3.3.2 Resposta – dades específiques](#3.3.2)
+  4. [Llistat de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS_LLISTAT)](#3.4)
+    1. [3.4.1 Petició](#3.4.1)
+    2. [3.4.2 Resposta – dades específiques](#3.4.2)
 
 
-# Introducció
+# 1 Introducció <a name="1"></a>
 
 Aquest document detalla la missatgeria associada al servei de consulta de titulacions oficials del
 Ministerio de Educación, Política Social y Deporte (MEPSYD en endavant).
@@ -30,7 +30,7 @@ Per poder realitzar la integració cal conèixer prèviament la següent documen
 
 
 
-# Transmissions de dades disponibles
+# 2 Transmissions de dades disponibles <a name="2"></a>
 
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
@@ -45,38 +45,35 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 
 Totes les consultes del producte tenen disponible la versió imprimible del resultat de la consulta en format PDF. Per més detalls adreceu-vos a l’apartat Extensions de missatgeria del document de missatgeria genèrica.
 
-| ![](RackMultipart20211123-4-1fg42x4_html_2510d52f0494e7cf.png) | L&#39;emissorfinalgaranteixlaqualitatdelesdadesperatítolsobtingutsapartirde1999.Abansd&#39;aquesta datanogaranteixqueestiguintotes lestitulacionsniestudisrealitzats. |
-| --- | --- |
+![image](https://user-images.githubusercontent.com/32306731/143427144-2b3a8c6b-b4b8-4c3d-bcc1-c9f76a65159c.png) L'emissor final garanteix la qualitat de les dades per a títols obtinguts a partir de 1999. Abans d'aquesta data no garanteix que estiguin totes les titulacions ni estudis realitzats.
 
-1.
-# Missatgeriadelsserveis
 
-Acontinuacióesdetallalamissatgeriacorresponentalblocdedadesespecífiquesdelesmodalitatsdeconsumdel producte.
+# 3 Missatgeria dels serveis <a name="3"></a>
 
-| ![](RackMultipart20211123-4-1fg42x4_html_2510d52f0494e7cf.png) | L&#39;emissor de lesdadesrequereixque s&#39;informin lesdadesdel funcionari que realitza la consulta.Així,calinformar elssegüentscampsdel&#39;elementFuncionariodelblocdedadesgenèriques:
-/Peticion/Funcionario/NombreCompletoFuncionario,/Peticion/Funcionario/NifFuncionario,//SolicitudTransmision/DatosGenericos/Solicitante/Funcionario/NombreCompletoFuncionarioi |
- |
-| --- | --- | --- |
+A continuació es detalla la missatgeria corresponent al bloc de dades específiques de les modalitats de consum del producte.
 
-![Shape32](RackMultipart20211123-4-1fg42x4_html_8cf6ba18ff8d8c39.gif)
+![image](https://user-images.githubusercontent.com/32306731/143427516-4f4960d3-6684-4d46-bca0-36d3d04008a6.png) L’emissor de les dades requereix que s’informin les dades del funcionari que realitza la consulta. Així, cal informar els següents camps de l’element Funcionario del bloc de dades genèriques: /Peticion/Funcionario/NombreCompletoFuncionario, 
+/Peticion/Funcionario/NifFuncionario, 
+//SolicitudTransmision/DatosGenericos/Solicitante/Funcionario/NombreCompletoFuncionario, 
+//SolicitudTransmision/DatosGenericos/Solicitante/Funcionario/NifFuncionario
 
-  1. **Verificació**** de ****titulacions**** universitàries****(TITOLS\_UNIVERSITARIS****)**
+## 3.1 Verificació de titulacions universitàries (TITOLS_UNIVERSITARIS) <a name="3.1"></a>
 
-Aquestamodalitat permetobtenirelstítolsuniversitarisdelciutadàsobreelqueesrealitzalaconsulta.
+Aquesta modalitat permet obtenir els títols universitaris del ciutadà sobre el que es realitza la consulta.
 
-    1.
-### Petició
+   
+### 3.1.1 Petició <a name="3.1.1"></a>
 
-      1. **Dades**** genèriques**
+#### 3.1.1.1 Dades genèriques
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| //DatosGenericos/Titular/TipoDocumentacion | Tipus de documentació (DNI / NIF o NIE). Encas d&#39;informar un NIE, el servei únicamentrespona titulacionsobtingudesalpaís. |
+| //DatosGenericos/Titular/TipoDocumentacion | Tipus de documentació (DNI / NIF o NIE). En cas d'informar un NIE, el servei únicament respon a titulacions obtingudes al país. |
 | //DatosGenericos/Titular/Documentacion | Documentació. |
 
-      1. **Dades**** específiques**
+#### 3.1.1.2 Dades específiques
 
-Aquestamodalitatnorequereixinformardadesespecífiques.
+Aquesta modalitat no requereix informar dades específiques.
 
     1.
 ### Resposta –dadesespecífiques
