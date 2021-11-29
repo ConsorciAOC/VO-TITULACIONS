@@ -14,7 +14,7 @@
    3. [3.3 Llistat de titulacions universitàries (TITOLS_UNIVERSITARIS_LLISTAT)](#3.3)
       1. [3.3.1 Petició](#3.3.1)
       2. [3.3.2 Resposta – dades específiques](#3.3.2)
-   4. [3.4 Llistat de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS_LLISTAT)](#3.1)
+   4. [3.4 Llistat de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS_LLISTAT)](#3.4)
       1. [3.4.1 Petició](#3.4.1)
       2. [3.4.2 Resposta – dades específiques](#3.4.2)
 
