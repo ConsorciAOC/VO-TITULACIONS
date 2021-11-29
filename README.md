@@ -143,7 +143,6 @@ Aquesta modalitat no requereix informar dades específiques.
 | //DatosTitulacion/DatosTitulo/CodTipoTitulo | Codi del tipus de títol obtingut: <lu><li>01 - Certificat</li><li>02 - Títol</li><li>03 - Credencial</li></lu> |
 | //DatosTitulacion/DatosTitulo/TipoTitulo | Tipus de títol del titular.. |
 | //DatosTitulacion/DatosTitulo/TipoEstudio | Tipus d’estudis al que pertany el títol. |
-
 | //DatosTitulacion/DatosTitulo/Nivel | Nivell del títol. |
 | //DatosTitulacion/DatosTitulo/Ley | Llei en que es basa la legalitat del títol. |
 | //DatosTitulacion/DatosTitulo/FechaFinalizacion | Data de finalització dels estudis del títol associat. El format s’ajustarà a DD/MM/AAAA, MM/AAAA o AAAA. |
@@ -235,8 +234,7 @@ Aquesta modalitat permet obtenir el llistat de títols universitaris del titular
 | //dadesTitol/tipusTitol | Tipus de títol que posseeix el titular. |
 | //dadesTitol/dataFinalitzacio | Data de finalització del títol (DD/MM/AAAA). |
 | //dadesTitol/dataExpedicio | Data d’expedició del títol. Correspon a la data del pagament de les tases per a la expedició del títol (DD/MM/AAAA). |
-| //dadesTitol/codiPaisExpedicio | Codi de país d’expedició del títol. Estarà codificat en
-ISO-3166-1 (numèric) |
+| //dadesTitol/codiPaisExpedicio | Codi de país d’expedició del títol. Estarà codificat en ISO-3166-1 (numèric) |
 | //dadesTitol/paisExpedicio | País d’expedició del títol. |
 | //dadesTitol/numeroTitol | Número de títol. |
 | //dadesTitol/registreUniversitari | Número de registre universitari del títol. |
@@ -285,8 +283,7 @@ Aquesta modalitat permet obtenir el llistat de títols no universitaris del titu
 | //titular/dadesTitular/nom | Nom del titular. |
 | //titular/dadesTitular/cognom1 | Primer cognom del titular. |
 | //titular/dadesTitular/cognom2 | Segon cognom del titular. |
-| //titular/dadesTitular/dataNaixement | Data de naixement del titular.
-Format: DD/MM/AAAA |
+| //titular/dadesTitular/dataNaixement | Data de naixement del titular. Format: DD/MM/AAAA |
 | //titular/dadesTitular/llocNaixement | Bloc que conté les dades del lloc de naixement del titular de la consulta. |
 | //titular/dadesTitular/llocNaixement/pais | País de naixement del titular. |
 | //titular/dadesTitular/llocNaixement/codiProvincia | Codi de província del titular. S’utilitzarà la codificació de l’INE (p.e. 43: Tarragona). |
@@ -316,10 +313,8 @@ Format: DD/MM/AAAA |
 | //dadesTitol/tipusEstudi | Tipus d’estudi al que pertany el títol. Els valors poden ser: <lu><li>LGE</li><li>ANTLGE</li><li>LOE</li><li>LOGSE</li></lu> |
 | //dadesTitol/nivell | Nivell del títol |
 | //dadesTitol/dataFinalitzacio | Data de finalització del títol (DD/MM/AAAA) |
-| //dadesTitol/dataExpedicio | Data d’expedició del títol. Correspon a la data del pagament de les tases per a la expedició del títol.
-(DD/MM/AAAA) |
-| //dadesTitol/codiPaisExpedicio | Codi de país d’expedició del títol. Estarà codificat en
-ISO-3166-1 (numèric) |
+| //dadesTitol/dataExpedicio | Data d’expedició del títol. Correspon a la data del pagament de les tases per a la expedició del títol. (DD/MM/AAAA) |
+| //dadesTitol/codiPaisExpedicio | Codi de país d’expedició del títol. Estarà codificat en ISO-3166-1 (numèric) |
 | //dadesTitol/paisExpedicio | País d’expedició del títol. |
 | //dadesTitol/numeroRegistreAutonomic | Número del registre autonòmic del títol. |
 | //dadesTitol/numeroRegistreMec | Número de registre assignat pel Ministerio de Educación. |
