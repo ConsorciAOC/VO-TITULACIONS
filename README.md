@@ -9,7 +9,7 @@
       1. [3.1.1 Petició](#3.1.1)
       2. [3.1.2 Resposta – dades específiques](#3.1.2)
    2. [3.2 Verificació de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS)](#3.2)
-      1. [3.2.1 Petició – dades específiques](#3.2.1)
+      1. [3.2.1 Petició](#3.2.1)
       2. [3.2.2 Resposta – dades específiques](#3.2.2)
    3. [3.3 Llistat de titulacions universitàries (TITOLS_UNIVERSITARIS_LLISTAT)](#3.3)
       1. [3.3.1 Petició](#3.3.1)
