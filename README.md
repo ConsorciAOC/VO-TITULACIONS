@@ -105,8 +105,8 @@ De l’schema associat a la resposta especifica, el servei informa les dades que
 | //resultat/codiResultat | Codi de resultat de l’operació de consulta: <lu><li>0003: Tramitada. Titular localitzat.</li><li>0232: Error reportat per l’emissor. Existeix més d’un registre per les dades proporcionades en la consulta.</li><li>0233: Titular no identificat.</li><li>0238: No hi ha dades del titular consultat.</li><li>0502: Error en la comunicació amb l’emissor.</li></lu> |
 | //resultat/descripcio | Descripció del resultat. |
 
-[BO]: https://github.com/ConsorciAOC/VO-TITULACIONS/tree/main/documents
-[HOM]: https://github.com/ConsorciAOC/VO-TITULACIONS/tree/main/documents
+[BO]: https://github.com/ConsorciAOC/VO-TITULACIONS/blob/main/documents/Estudios_universitarios_pre_Bolonia.xlsx
+[HOM]: https://github.com/ConsorciAOC/VO-TITULACIONS/blob/main/documents/Titulaciones_homologaciones.xls
 [LIB]: https://github.com/ConsorciAOC/VO-TITULACIONS/blob/main/documents/Titulaciones_libros.xls
 
 
@@ -165,7 +165,7 @@ Aquesta modalitat no requereix informar dades específiques.
 | //resultat/codiResultat | Codi de resultat de l’operació de consulta: <lu><li>0003: Tramitada. Titular localitzat.</li><li>0232: Error reportat per l’emissor. Existeix més d’un registre per les dades proporcionades en la consulta.</li><li>0233: Titular no identificat.</li><li>0238: No hi ha dades del titular consultat.</li><li>0502: Error en la comunicació amb l’emissor.</li></lu> | 
 | //resultat/descripcio | Descripció del resultat. |
 
-[NO_UNI]:DDDDD
+[NO_UNI]:https://github.com/ConsorciAOC/VO-TITULACIONS/blob/main/documents/Codigos_titulacion_no_universitarios.xls
 
 ## 3.3 Llistat de titulacions universitàries (TITOLS_UNIVERSITARIS_LLISTAT) <a name="3.3"></a>
 
