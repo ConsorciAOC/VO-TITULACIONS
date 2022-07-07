@@ -26,11 +26,11 @@ Aquest document detalla la missatgeria associada al servei de consulta de titula
 Ministerio de Educación, Política Social y Deporte (MEPSYD en endavant).
 
 Per poder realitzar la integració cal conèixer prèviament la següent documentació:
-•	[Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
- •	[Excels amb les codificacions.][COD]
+• [Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
+• [Excels amb les codificacions.][COD]
 
 [PCI]:https://github.com/ConsorciAOC/PCI
-[COD]:asdasd
+[COD]: https://github.com/ConsorciAOC/VO-TITULACIONS/tree/main/documents
 
 # 2 Transmissions de dades disponibles <a name="2"></a>
 
@@ -92,7 +92,7 @@ De l’schema associat a la resposta especifica, el servei informa les dades que
 | //titolsUniversitaris/ListaTitulos/DatosTitulacion | Bloc de dades. Conté la informació d’un títol del titular sobre el que es realitza la consulta. |
 | //DatosTitulacion/DatosCentro/Universidad | Universitat que va atorgar el títol universitari. |
 | //DatosTitulacion/DatosCentro/Centro | Centre que va atorgar el títol universitari. |
-| //DatosTitulacion/DatosTitulo/CodTitulacion | Codi de titulació. <ul><li>Per títols Pre Bolonia vegeu l'Excel Estudios_universitarios_pre_Bolonia.xlsx</li><li>Per títols Bolonia vegeu https://www.educacion.gob.es/ruct/consultaestudios?actual=estudios</li><li>Per homologacions vegeu l'Excel Titulaciones_homologaciones.xlsx</li><li>Per títols de llibres manuscrits vegeu Titulaciones_libros.xlsx</li></ul> |
+| //DatosTitulacion/DatosTitulo/CodTitulacion | Codi de titulació. <ul><li>Per títols Pre Bolonia vegeu l'Excel [Estudios_universitarios_pre_Bolonia.xlsx][BO]</li><li>Per títols Bolonia vegeu https://www.educacion.gob.es/ruct/consultaestudios?actual=estudios</li><li>Per homologacions vegeu l'Excel [Titulaciones_homologaciones.xlsx][HOM]</li><li>Per títols de llibres manuscrits vegeu [Titulaciones_libros.xlsx][LIB]</li></ul> |
 | //DatosTitulacion/DatosTitulo/NombreCarrera | Nom de la carrera de la que el titular poseeix el títol. |
 | //DatosTitulacion/DatosTitulo/CodTipoTitulo | Codi de tipus de títol: <lu><li>0A - Especialista</li><li>0B - Diploma Post-grado</li><li>0C - Título Superior Extranjero (Acceso Doctorado)</li><li>0D - Título Profesional Superior Estatal(Acceso Doctor)</li><li>0E - Tit. o Estudio Equivalente a Título Universitario</li><li>0F - Título Profesional</li><li>0G - Máster</li><li>0H - Grado</li><li>0J - Equivalente a Tit. Ldo. (Títulos Eclesiásticos)</li><li>0K - Tít. o Est. equiv. Ldo.(Ens. Artíst.) Acce.Doctor</li><li>01 - Diplomado/Maestro</li><li>02 - Arquitecto Técnico</li><li>03 - Ingeniero Técnico</li><li>04 - Licenciado</li><li>05 - Arquitecto</li><li>06 - Ingeniero</li><li>07 - Doctor</li><li>08 - Estudios Extranjeros Homologados (Acceso Doctor)</li></lu> |
 | //DatosTitulacion/DatosTitulo/TipoTitulo | Tipus de títol del titular. |
@@ -104,6 +104,11 @@ De l’schema associat a la resposta especifica, el servei informa les dades que
 | //DatosTitulacion/DatosTitulo/RegistroUniv | Registre universitari (codi de registre). |
 | //resultat/codiResultat | Codi de resultat de l’operació de consulta: <lu><li>0003: Tramitada. Titular localitzat.</li><li>0232: Error reportat per l’emissor. Existeix més d’un registre per les dades proporcionades en la consulta.</li><li>0233: Titular no identificat.</li><li>0238: No hi ha dades del titular consultat.</li><li>0502: Error en la comunicació amb l’emissor.</li></lu> |
 | //resultat/descripcio | Descripció del resultat. |
+
+[BO]: https://github.com/ConsorciAOC/VO-TITULACIONS/tree/main/documents
+[HOM]: https://github.com/ConsorciAOC/VO-TITULACIONS/tree/main/documents
+[LIB]: https://github.com/ConsorciAOC/VO-TITULACIONS/blob/main/documents/Titulaciones_libros.xls
+
 
 ![image](https://user-images.githubusercontent.com/32306731/143479045-465782a2-6a47-4bbc-b41c-f8dc6c4f4ec9.png)
 
@@ -140,7 +145,7 @@ Aquesta modalitat no requereix informar dades específiques.
 | //DatosTitulacion/DatosCentro/Centro | Centre que va atorgar el títol. |
 | //DatosTitulacion/DatosCentro/CodCentro | Codi del centre que va atorgar el títol. |
 | //DatosTitulacion/DatosCentro/Provincia | Província del centre que va atorgar el títol. |
-| //DatosTitulacion/DatosTitulo/CodTitulacion | Codi de la titulació obtinguda. Vegeu l'Excel Codigos_titulacion_no_universitarios.xlsx. |
+| //DatosTitulacion/DatosTitulo/CodTitulacion | Codi de la titulació obtinguda. Vegeu l'Excel [Codigos_titulacion_no_universitarios.xlsx.][NO_UNI] |
 | //DatosTitulacion/DatosTitulo/Titulacion |Nom de la titulació obtinguda. |
 | //DatosTitulacion/DatosTitulo/CodTipoTitulo | Codi del tipus de títol obtingut: <lu><li>01 - Certificat</li><li>02 - Títol</li><li>03 - Credencial</li></lu> |
 | //DatosTitulacion/DatosTitulo/TipoTitulo | Tipus de títol del titular.. |
@@ -159,6 +164,8 @@ Aquesta modalitat no requereix informar dades específiques.
 | //DatosTitulacion/DatosTitulo/Registro/NumFolio |Número de foli del llibre en el que figura el Registre Oficial. |
 | //resultat/codiResultat | Codi de resultat de l’operació de consulta: <lu><li>0003: Tramitada. Titular localitzat.</li><li>0232: Error reportat per l’emissor. Existeix més d’un registre per les dades proporcionades en la consulta.</li><li>0233: Titular no identificat.</li><li>0238: No hi ha dades del titular consultat.</li><li>0502: Error en la comunicació amb l’emissor.</li></lu> | 
 | //resultat/descripcio | Descripció del resultat. |
+
+[NO_UNI]:DDDDD
 
 ## 3.3 Llistat de titulacions universitàries (TITOLS_UNIVERSITARIS_LLISTAT) <a name="3.3"></a>
 
