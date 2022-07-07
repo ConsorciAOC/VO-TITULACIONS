@@ -17,6 +17,7 @@
    4. [3.4 Llistat de titulacions no universitàries (TITOLS_NO_UNIVERSITARIS_LLISTAT)](#3.4)
       1. [3.4.1 Petició](#3.4.1)
       2. [3.4.2 Resposta – dades específiques](#3.4.2)
+   5. [3.5  Joc de proves](#3.5)
 
 
 # 1 Introducció <a name="1"></a>
@@ -25,10 +26,11 @@ Aquest document detalla la missatgeria associada al servei de consulta de titula
 Ministerio de Educación, Política Social y Deporte (MEPSYD en endavant).
 
 Per poder realitzar la integració cal conèixer prèviament la següent documentació:
-•	Document d’Especificació de missatgeria pel consum de productes de la plataforma PCI del Consorci AOC.
-•	Excels amb les codificacions (DI - Via Oberta - TITULACIONS-excels codificacions.zip).
+•	[Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
+ •	[Excels amb les codificacions.][COD]
 
-
+[PCI]:https://github.com/ConsorciAOC/PCI
+[COD]:asdasd
 
 # 2 Transmissions de dades disponibles <a name="2"></a>
 
@@ -322,3 +324,14 @@ Aquesta modalitat permet obtenir el llistat de títols no universitaris del titu
 | //dadesTitol/registre/numeroOrdreLlibre | Número d’ordre del llibre en el que es troba el registre oficial. |
 | //dadesTitol/registre/numeroLlibre | Número del llibre en el que es troba el registre oficial. |
 | //dadesTitol/registre/numeroFoli | Número de foli (del llibre) en el que es troba el registre oficial. |
+
+
+## 3.5  Joc de proves <a name="3.5"></a>
+
+L'emissor final publica els següent [joc de proves a l'entorn de pre-producció][proves]
+ 
+[proves]: https://administracionelectronica.gob.es/ctt/svd/descargas#.Ysa2dnbP0uV
+ 
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) En cas de tindre problemes per accedir als jocs de proves, si us plau, obre un tiquet a través del [formulari][form]
+ 
+[form]:https://www.aoc.cat/portal-suport/peticio-integradors/idservei/integracio/
