@@ -26,7 +26,8 @@ Aquest document detalla la missatgeria associada al servei de consulta de titula
 Ministerio de Educación, Política Social y Deporte (MEPSYD en endavant).
 
 Per poder realitzar la integració cal conèixer prèviament la següent documentació:
-• [Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
+
+• [Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]<br>
 • [Excels amb les codificacions.][COD]
 
 [PCI]:https://github.com/ConsorciAOC/PCI
