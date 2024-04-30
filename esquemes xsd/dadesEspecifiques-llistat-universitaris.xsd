@@ -226,14 +226,14 @@
 	<xs:element name="universitat">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:maxLength value="100"/>
+				<xs:maxLength value="250"/>
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
 	<xs:element name="centre">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:maxLength value="200"/>
+				<xs:maxLength value="250"/>
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
@@ -247,7 +247,7 @@
 	<xs:element name="nomCarrera">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:maxLength value="100"/>
+				<xs:maxLength value="1000"/>
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
